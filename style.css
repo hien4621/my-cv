@@ -400,7 +400,7 @@ ul.list li:first-child:after {
 /* -----------------------skill----------------------- */
 .section-skill {
     width: 50%;
-    padding: 60px 30px 30px 40px;
+    padding: 45px 30px 30px 40px;
 }
 
 .section-skill-container {
@@ -748,4 +748,57 @@ ul.list li:first-child:after {
 }
 .blog-container-col{
     flex:1;
+}
+/* --------------------------contact---------------------- */
+.contact-container{
+    margin-top:30px;
+}
+.form-info{
+    width:50%;
+    padding-right:15px;
+    float:left;
+}
+.site-input{
+    width: 100%;
+    height: 45px;
+    border: 0;
+    color: #000;
+    border-bottom: solid 1px #dfdfdf;
+    font-size: 13px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    outline: 0;
+}
+.site-area{
+    width: 100%;
+    border: 0;
+    border-bottom: solid 1px #dfdfdf;
+    font-size: 13px;
+    padding: 20px 0 0 10px;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+.site-area::placeholder{
+    font-family: 'Roboto', sans-serif;
+}
+form .btn{
+    width: 80px;
+}
+.contact-container ul li{
+    list-style: none;
+    font-size: 14px;
+    color: #787878;
+    line-height: 34px;
+}
+.contact-container span{
+    color:#000;
+}
+.menu-icon-social{
+    display:flex;
+    margin-left: -10px;
+    margin-top:10px;
+}
+#contact iframe{
+    padding: 40px 15px 0px 15px;
+    width:100%;
 }
