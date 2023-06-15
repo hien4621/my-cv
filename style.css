@@ -69,7 +69,7 @@ a {
     -webkit-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
-    box-shadow:0px 2px 92px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07);
 }
 
 .profile-name {
@@ -99,14 +99,14 @@ a {
 
 }
 
-.profile-information {
+.list {
     list-style: none;
     margin: 2px 0px 8px 35px;
     padding-left: 0px;
     display: block;
 }
 
-.profile-information li {
+.list li {
     border-left: solid 2px #eee;
     padding: 0 0 23px 20px;
     font-size: 14px;
@@ -115,13 +115,13 @@ a {
     position: relative;
 }
 
-.profile-information li:last-child {
+.list li:last-child {
     border: 0;
     margin-top: -2px;
     margin-left: 2px
 }
 
-.profile-information li:before {
+.list li:before {
     content: "";
     border: solid 2px;
     border-color: #ffc500;
@@ -138,7 +138,7 @@ a {
 
 }
 
-.profile-information li:first-child:before {
+.list li:first-child:before {
     margin-left: -40px;
     margin-top: -30px;
     margin-bottom: 10px;
@@ -149,7 +149,7 @@ a {
     position: relative;
 }
 
-ul.profile-information li:first-child:after {
+ul.list li:first-child:after {
     background: url(images/glasses.png) no-repeat;
     content: '';
     width: 30px;
@@ -161,13 +161,13 @@ ul.profile-information li:first-child:after {
     background-size: 27px 10px;
 }
 
-.profile-information li p {
+.list li p {
     font-size: 13.5px;
     color: #7f7f7f;
     line-height: 12px;
 }
 
-.profile-information li span {
+.list li span {
     color: #000;
 }
 
@@ -211,7 +211,7 @@ ul.profile-information li:first-child:after {
     font-size: 9px;
 }
 
-/* -----------------content right menu-------------------- */
+/* -----------------header-------------------- */
 .content-right {
     padding: 0 15px;
 }
@@ -243,7 +243,7 @@ ul.profile-information li:first-child:after {
     text-align: center;
 }
 
-.home {
+.hometab {
     width: 68px;
     height: 70px;
     background-color: #ffc500;
@@ -251,11 +251,11 @@ ul.profile-information li:first-child:after {
     margin-right: 10px;
 }
 
-.home:hover {
+.hometab:hover {
     background-color: #ffb100;
 }
 
-.home i {
+.hometab i {
     font-size: 18px;
 }
 
@@ -307,6 +307,10 @@ ul.profile-information li:first-child:after {
 }
 
 /* --------------------------------content right content-------------------- */
+.active {
+    display: block;
+}
+
 .content-right-content {
     border-radius: 6px;
     background-color: #fff;
@@ -361,7 +365,7 @@ ul.profile-information li:first-child:after {
     padding: 20px;
     width: 25%;
     border-radius: 6px;
-    box-shadow:0px 0px 48px 0px rgba(4, 6, 4, 0.08);
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08);
 }
 
 .service-item:first-child {
@@ -434,11 +438,13 @@ ul.profile-information li:first-child:after {
     width: 30%;
     background-color: #ffc500;
 }
+
 /* -------------------footer-------------- */
-.footer{
-    display:block;
+.footer {
+    display: block;
 }
-.content-right-footer{
+
+.content-right-footer {
     background: #1e1e1e;
     height: 70px;
     color: #fff;
@@ -449,16 +455,179 @@ ul.profile-information li:first-child:after {
     margin: 30px 0;
     justify-content: space-between;
 }
-.footer-name{
-    width:50%;
-    padding:0 30px;
-    font-size:15px;
+
+.footer-name {
+    width: 50%;
+    padding: 0 30px;
+    font-size: 15px;
 }
-.footer-copyright{
+
+.footer-copyright {
     font-size: 12px;
     color: #9C9c9c;
     padding: 0 30px;
 }
-.footer-copyright a{
+
+.footer-copyright a {
     color: #fff;
+}
+
+/* -----------------------resume----------------- */
+.resume-container {
+    margin-top: 40px;
+}
+
+.resume-title {
+    width: 50%;
+}
+
+.resume-title {
+    list-style: none;
+    margin: 2px 0px 8px 28px;
+    display: block;
+}
+
+.resume-title.list li {
+    padding: 0 0 30px 30px;
+}
+
+.resume-title.list li:before {
+    margin-left: -35px;
+    margin-top: 5px;
+}
+
+.resume-title.list li:first-child {
+    padding: 0 0 50px 30px;
+    display: flex;
+}
+
+.resume-title.list li:first-child:before {
+    margin: -13px -55px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.resume-title i {
+    position: absolute;
+    z-index: 1;
+    line-height: 25px;
+    margin-left: -6px;
+}
+
+.resume-title.list li h2 {
+    font-size: 18px;
+    color: #333;
+    margin-left: 12px;
+    line-height: 28px;
+    position: absolute;
+}
+
+.resume-title.list li h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.resume-title.list li h4 {
+    font-size: 12px;
+    color: #333;
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+.resume-title.list li p {
+    font-size: 13px;
+    color: #989898;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 0;
+}
+
+/* ---------------------------client------------------ */
+.client-container {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.client-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08);
+    width: 100%;
+    padding: 26px 16px;
+}
+
+.client-item img {
+    width: 100%;
+}
+
+/* -------------------------Testimonials---------------- */
+.testimonial-container {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.testimonial-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08);
+    width: 100%;
+}
+.testimonial-top{
+    display: inline-block;
+}
+.testimonial-top figure{
+    display: block;
+    width: 23%;
+    float: left;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.testimonial-top figure img{
+    width:100%;
+    vertical-align: middle;
+}
+.name-info{
+    width: 68%;
+    padding: 8px 12px;
+    float: left;
+    line-height: 15px;
+}
+.name{
+    font-size: 14px;
+    font-weight: 500;
+}
+.job{
+    font-size: 12px;
+    color: #d0d0d0;
+}
+.testimonial-item hr{
+    margin: 6px 0px 10px;
+    border-top: 0px;
+    border-left: 0;
+    background: #efefef;
+    width:100%;
+}
+.testimonial-item p{
+    color: #989898;
+    font-size: 12.5px;
+    line-height: 20px;
+    margin:0;
+}
+.dot-container{
+    margin-top: 30px;
+}
+.dot-item{
+    width: 10px;
+    height:10px;
+    background: #ffc500 !important;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
 }
